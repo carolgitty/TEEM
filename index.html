@@ -1,106 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transformation Exhibition & Events Management</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff;
-      color: #222;
-    }
-    header {
-      background: #000;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      height: 80px;
-    }
-    .tagline {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      color: #f5d100;
-    }
-    nav {
-      background: #111;
-      text-align: center;
-      padding: 10px;
-    }
-    nav a {
-      color: #f5d100;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #000;
-      border-bottom: 2px solid #f5d100;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-    .services li {
-      margin-bottom: 10px;
-    }
-    footer {
-      background: #000;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-    }
-    .contact p {
-      margin: 5px 0;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
+
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-r from-blue-900 to-yellow-500 text-white py-16 text-center">
+    <header>
     <img src="temm_logo.png" alt="TEEM Logo">
     <div class="tagline">Connect your destination to TEEM</div>
+    </header>
+    <h1 class="text-4xl font-bold">Transformation Exhibition & Events Management</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto">We are tuned up with Hospitality Services and Solutions, Exhibition Spaces, Creative Brand Stories, Impressive Engagements, and Events — Organized by highly experienced professionals.</p>
+    <a href="#contact" class="mt-6 inline-block bg-yellow-400 text-blue-900 px-6 py-2 rounded font-semibold hover:bg-yellow-300">Get in Touch</a>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      We are new in the market but have worked on many projects. We specialize in Hospitality Services and Solutions,
-      Exhibition Spaces, Creative Brand Stories, and Event Management. Our team is experienced, detail-oriented, and focused on
-      delivering meaningful and impressive engagements. We tailor every project closely to customer requirements.
-    </p>
+  <!-- About Section -->
+  <section class="py-12 px-4 max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4">About Us</h2>
+    <p class="text-lg">We deliver memorable event experiences with our seasoned team specializing in exhibitions, hospitality, and creative brand execution.</p>
   </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul class="services">
-      <li>Hospitality Services & Solutions</li>
-      <li>Exhibition Spaces & Setup</li>
-      <li>Creative Brand Storytelling</li>
-      <li>Customer Engagement Campaigns</li>
-      <li>Corporate & Private Event Management</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact">
-      <p><strong>Phone:</strong> +91 96968 271200</p>
-      <p><strong>Email:</strong> teem.events@gmail.com</p>
+  <!-- Services Section -->
+  <section class="bg-gray-100 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-10">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Hospitality</h3>
+          <p>Professional hospitality support for events and exhibitions ensuring seamless guest experience.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Exhibition</h3>
+          <p>Creative stall design, fabrication, and on-ground exhibition management with precision.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Events</h3>
+          <p>From brand launches to weddings, we organize impactful events tailored to your vision.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
+  <!-- Gallery Placeholder -->
+  <section class="py-12 px-4 max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold text-center mb-8">Gallery</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-gray-300 h-40 rounded"></div>
+      <div class="bg-gray-300 h-40 rounded"></div>
+      <div class="bg-gray-300 h-40 rounded"></div>
+    </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="bg-blue-900 text-white py-12">
     <div class="max-w-xl mx-auto px-4 text-center">
       <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
       <p class="mb-4">Ready to transform your event? Reach out to us today.</p>
@@ -114,8 +72,10 @@
     </div>
   </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4">
     <p>&copy; 2025 Transformation Exhibition & Events Management. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
