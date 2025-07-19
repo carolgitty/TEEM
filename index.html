@@ -6,18 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transformation Exhibition & Events Management</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style rel="stylesheet" href="styles.css"></style>  
 </head>
 
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-white text-gray-800 font-sans ">
   <!-- Hero Section -->
-  <header class="bg-gradient-to-r from-blue-900 to-yellow-500 text-white py-16 text-center">
+  <header class="sticky bg-white top-0 z-50 text-white pb-16 text-center">
 
       <header class="absolute inset-x-0 top-0 z-50">
     <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" class="h-8 w-auto" />
+          <span class="sr-only">Transformation Exhibition & Events Management</span>
+          <img src="logo.png" alt="" class="h-20 w-auto" />
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -29,24 +30,22 @@
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Product</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Features</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Marketplace</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Company</a>
-      </div>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a href="#home" class="text-sm/6 font-semibold text-gray-900">Home</a>
+        <a href="#about" class="text-sm/6 font-semibold text-gray-900">About Us</a>
+        <a href="#services" class="text-sm/6 font-semibold text-gray-900">Services</a>
+        <a href="#gallery" class="text-sm/6 font-semibold text-gray-900">Gallery</a>
+        <a href="#contact" class="text-sm/6 font-semibold text-gray-900">Contact</a>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div role="dialog" aria-modal="true" class="lg:hidden">
+    <div role="dialog" aria-modal="true" class="lg:hidden md:hidden">
       <!-- Background backdrop, show/hide based on slide-over state. -->
       <div class="fixed inset-0 z-50"></div>
       <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Transformation Exhibition & Events Management</span>
-            <img src="temm_logo.png" alt="TEEM Logo">
+            <img src="logo.png" alt="TEEM Logo" class="h-8 w-auto" />
           </a>
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
             <span class="sr-only">Close menu</span>
@@ -58,13 +57,10 @@
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
-            </div>
-            <div class="py-6">
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
             </div>
           </div>
         </div>
@@ -72,44 +68,103 @@
     </div>
   </header>
     
-    <header>
-    <img src="temm_logo.png" alt="TEEM Logo">
-    <div class="tagline">Connect your destination to TEEM</div>
-    </header>
+
+     </header>
+
+  <!-- Home Section -->
+  <section id="home" class="pt-40 px-4 max-w-4xl mx-auto text-center">
     <h1 class="text-4xl font-bold">Transformation Exhibition & Events Management</h1>
     <p class="mt-4 text-lg max-w-2xl mx-auto">We are tuned up with Hospitality Services and Solutions, Exhibition Spaces, Creative Brand Stories, Impressive Engagements, and Events — Organized by highly experienced professionals.</p>
     <a href="#contact" class="mt-6 inline-block bg-yellow-400 text-blue-900 px-6 py-2 rounded font-semibold hover:bg-yellow-300">Get in Touch</a>
-  </header>
-
+  </section>
   <!-- About Section -->
-  <section class="py-12 px-4 max-w-4xl mx-auto text-center">
-    <h2 class="text-2xl font-bold mb-4">About Us</h2>
+  <section id="gallery" class="pt-40 px-4 max-w-4xl mx-auto text-center">
+    <div class="px-4 sm:px-6 lg:px-8 ">
+  <div class="h-120 md:h-[80dvh] flex flex-col bg-[url('about.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl">
+    <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
+      <h1 class="text-xl md:text-3xl lg:text-5xl text-white">
+        Making it a success is the goal!
+      </h1>
+
+          <!-- <p class="text-lg">We are new in the market but have worked on many projects. We are tuned up with Hospitality Services and Solutions, Exhibition Spaces, Creative Brand Stories, meaningful, Impressive Engagements, and Events Organizing and Managing all types of events with highly experienced professionals in all areas. Our Team observes closely for the customer requirements and expertise in a better and easier way. Connect your destination to TEEM. -->
+
+    </div>
+  </div>
+</div>
+
+ </p>
+  </section>
+
+  <section id="about" class="pt-40 px-4 max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4">Our Vision</h2>
+    <p class="text-lg">To be the leading event management company, recognized for our creativity, professionalism, and commitment to excellence.</p>
+    <h2 class="text-2xl font-bold mb-4">Who we are?</h2>
     <p class="text-lg">We deliver memorable event experiences with our seasoned team specializing in exhibitions, hospitality, and creative brand execution.</p>
+    <p class="text-lg">We are new in the market but have worked on many projects. We are tuned up with Hospitality Services and Solutions, Exhibition Spaces, Creative Brand Stories, meaningful, Impressive Engagements, and Events Organizing and Managing all types of events with highly experienced professionals in all areas. Our Team observes closely for the customer requirements and expertise in a better and easier way. Connect your destination to TEEM.
+
   </section>
 
   <!-- Services Section -->
-  <section class="bg-gray-100 py-12">
+  <section id="services" class="pt-40">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-2xl font-bold text-center mb-10">Our Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">Hospitality</h3>
-          <p>Professional hospitality support for events and exhibitions ensuring seamless guest experience.</p>
-        </div>
-        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">Exhibition</h3>
-          <p>Creative stall design, fabrication, and on-ground exhibition management with precision.</p>
-        </div>
-        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">Events</h3>
-          <p>From brand launches to weddings, we organize impactful events tailored to your vision.</p>
-        </div>
+
+        <div class="max-w-sm rounded-lg border border-gray-200 p-5 shadow">
+  <img src="hospitality.png" class="rounded-lg" />
+  <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Hospitality</h2>
+  <div class="flex flex-col items-start">
+    <p class="mb-3 text-gray-700">Hospitality solutions. Doing FF&E and OS&E procurement Services</p>
+    <!-- <button class="rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300">Card button</button> -->
+  </div>
+</div>
+
+        <div class="max-w-sm rounded-lg border border-gray-200 p-5 shadow">
+  <img src="exhibition.png" class="rounded-lg" />
+  <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Exhibition</h2>
+  <div class="flex flex-col items-start">
+    <p class="mb-3 text-gray-700">Building Exhibition stands and innovative technical support.</p>
+    <!-- <button class="rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300">Card button</button> -->
+  </div>
+</div>
+
+        <div class="max-w-sm rounded-lg border border-gray-200 p-5 shadow items-center">
+  <img src="events.png" class="rounded-lg" />
+  <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Events</h2>
+  <div class="flex flex-col items-start">
+    <p class="mb-3 text-gray-700">Premium solutions and services for your events, Start-to-end.</p>
+    <!-- <button class="rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300">Card button</button> -->
+  </div>
+</div>
+
+          <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Organizing events ..</h3>
+         <p>Organizing Exhibition events</p>
+        <p>Organizing events and concerts</p>
+ </div>
+ 
+          <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Arrangements..</h3>
+         <p>Corporate event structures</p>
+        <p>F&B arrangements</p>
+ </div>
+ 
+          <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Marketing & Designing..</h3>
+         <p>FF&E and OS&E services</p>
+        <p>Marketing and designing the business on social media</p>
+ </div>
+
+
+
       </div>
     </div>
   </section>
 
+  
+
   <!-- Gallery Placeholder -->
-  <section class="py-12 px-4 max-w-6xl mx-auto">
+  <section id="extra-gallery" class="pt-40 px-4 max-w-6xl mx-auto">
     <h2 class="text-2xl font-bold text-center mb-8">Gallery</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div class="bg-gray-300 h-40 rounded"></div>
@@ -119,17 +174,24 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-blue-900 text-white py-12">
-    <div class="max-w-xl mx-auto px-4 text-center">
+  <section id="contact" class="pt-40">
+    <div class="flex bg-blue-100">
+       <!-- <img src="logo.png" alt="TEEM Logo" class="h-100 w-auto mx-auto mb-4"> -->
+     
+    <div class="max-w-xl mx-auto px-4 text-center">      
+        
       <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-      <p class="mb-4">Ready to transform your event? Reach out to us today.</p>
-      <p class="mb-2">📞 <strong>96968271200</strong></p>
+       <p class="mb-2">📞 <strong>96968271200</strong></p>
+       
+     <p class="mb-4">Ready to transform your event? Reach out to us today.</p>
       <form action="https://formspree.io/f/mrbkvarw" method="POST" class="space-y-4 mt-6">
         <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 rounded text-black" />
         <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 rounded text-black" />
         <textarea name="message" rows="4" placeholder="Your Message" required class="w-full p-2 rounded text-black"></textarea>
         <button type="submit" class="bg-yellow-400 text-blue-900 px-6 py-2 rounded font-semibold hover:bg-yellow-300">Send Message</button>
       </form>
+    </div>
+
     </div>
   </section>
 
