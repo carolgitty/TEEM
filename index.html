@@ -9,15 +9,14 @@
   <style rel="stylesheet" href="styles.css"></style>  
 </head>
 
-<body class="bg-white text-gray-800 font-sans ">
+<body class="bg-white text-gray-800 font-sans bg-[url('bg/bg-blue.png')] bg-repeat">
   <!-- Hero Section -->
-  <header class="sticky bg-white top-0 z-50 text-white pb-16 text-center">
+  <header class="sticky bg-[url('bg/bg-blue.png')] bg-repeat top-0 z-50 text-white pb-16 text-center">
 
       <header class="absolute inset-x-0 top-0 z-50">
     <nav aria-label="Global" class="flex items-center justify-between">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
-          <h1>TEEM</h1>
           <img src="logo.png" alt="" class="h-20 w-auto" />
         </a>
       </div>
@@ -30,6 +29,8 @@
       <div class="flex gap-x-12">
         <a href="#home" class="text-sm/6 font-semibold text-gray-900">Home</a>
         <a href="#about" class="text-sm/6 font-semibold text-gray-900">About Us</a>
+        <!-- <a href="#video" class="text-sm/6 font-semibold text-gray-900">Video</a> -->
+        <a href="#category" class="text-sm/6 font-semibold text-gray-900">Category</a>
         <a href="#services" class="text-sm/6 font-semibold text-gray-900">Services</a>
         <a href="#gallery" class="text-sm/6 font-semibold text-gray-900">Gallery</a>
         <a href="#contact" class="text-sm/6 font-semibold text-gray-900">Contact</a>
@@ -46,13 +47,41 @@
     <p class="mt-4 text-lg max-w-2xl mx-auto text-blue-400">We Transform your Move into the great Movements. </p>
     <p class="mt-4 text-lg max-w-2xl mx-auto mb-20 ">Be part of our TEEM </p>
 
-    <a href="#contact" class="mt-6 inline-block bg-yellow-400 text-blue-900 px-6 py-2 rounded font-semibold hover:bg-yellow-300">Get in Touch</a>
-     <p class="mt-20 text-lg max-w-2xl mx-auto">We have experience working in the background, but TODAY we are LIVE!!!
+    <a href="#contact" class="mt-6 inline-block bg-blue-400 text-white-900 px-6 py-2 
+    rounded font-semibold hover:bg-blue-400 ">MEET US IN ONE CLICK</a>
+     <p class="mt-5 text-lg max-w-2xl mx-auto">We have experience working in the background, but TODAY we are LIVE!!!
 </p>
 
   </section>
+
   <!-- About Section -->
-  <section id="gallery" class="pt-40 px-4 max-w-4xl mx-auto text-center">
+ <section id="about" class="py-40">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <img src="about.jpg" alt="Team at work" class="rounded-2xl shadow-md">
+      </div>
+      <div class="flex flex-col justify-center">
+        <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Who we are?</h3>
+        <p class="mb-4 text-gray-700 leading-relaxed">
+          We are new in the market but have worked on many projects. We are tuned up with Hospitality Services and Solutions, Exhibition Spaces, Creative Brand Stories, meaningful, Impressive Engagements, and Events Organizing and Managing all types of events with highly experienced professionals in all areas. Our Team observes closely for the customer requirements and expertise in a better and easier way. Connect your destination to TEEM.
+
+        </p>
+        <a href="#contact" class="mt-6 inline-block bg-blue-400 text-white-900 px-6 
+        py-2 rounded font-semibold hover:bg-blue-400 text-center">MEET US IN ONE CLICK</a>
+
+        <!-- <h3 class="text-2xl font-semibold text-indigo-600 mt-8 mb-4">What Sets Us Apart</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Creative & Professional Event Solutions</li>
+          <li>Strong Team with Hospitality Expertise</li>
+          <li>Custom Branding & Exhibition Spaces</li>
+          <li>Customer-first, detail-oriented approach</li>
+        </ul> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video" class="pt-40 px-4 max-w-4xl mx-auto text-center">
     <div class="px-4 sm:px-6 lg:px-8 ">
         <div class="relative overflow-hidden rounded-lg">
       <video class="w-full h-auto rounded-lg" autoplay muted playsinline controls>
@@ -66,7 +95,7 @@
         Making it a success is the goal!
       </h1>
 
-          <!-- <p class="text-lg">We are new in the market but have worked on many projects. We are tuned up with Hospitality Services and Solutions, Exhibition Spaces, Creative Brand Stories, meaningful, Impressive Engagements, and Events Organizing and Managing all types of events with highly experienced professionals in all areas. Our Team observes closely for the customer requirements and expertise in a better and easier way. Connect your destination to TEEM. -->
+          <p class="text-lg">We are new in the market but have worked on many projects. We are tuned up with Hospitality Services and Solutions, Exhibition Spaces, Creative Brand Stories, meaningful, Impressive Engagements, and Events Organizing and Managing all types of events with highly experienced professionals in all areas. Our Team observes closely for the customer requirements and expertise in a better and easier way. Connect your destination to TEEM.
 
     </div>
   </div> -->
@@ -75,36 +104,14 @@
  </p>
   </section>
 
- <section id="about" class="py-40 bg-white">
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div>
-        <img src="about.jpg" alt="Team at work" class="rounded-2xl shadow-md">
-      </div>
-      <div class="flex flex-col justify-center">
-        <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Our Vision</h3>
-        <p class="mb-4 text-gray-700 leading-relaxed">
-          We aim to become a leading name in the event & exhibition industry by delivering compelling
-          brand stories, immersive experiences, and end-to-end management for all kinds of events.
-        </p>
-        <h3 class="text-2xl font-semibold text-indigo-600 mt-8 mb-4">What Sets Us Apart</h3>
-        <ul class="list-disc list-inside text-gray-700 space-y-2">
-          <li>Creative & Professional Event Solutions</li>
-          <li>Strong Team with Hospitality Expertise</li>
-          <li>Custom Branding & Exhibition Spaces</li>
-          <li>Customer-first, detail-oriented approach</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="pt-40">
+  <!-- Category Section -->
+  <section id="category" class="pt-40">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-2xl font-bold text-center mb-10">Our Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
 
         <div class="max-w-sm rounded-lg border border-gray-200 p-5 shadow">
-  <img src="hospitality.png" class="rounded-lg" />
+  <img src="category/hospitality.png" class="rounded-lg" />
   <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Hospitality</h2>
   <div class="flex flex-col items-start">
     <p class="mb-3 text-gray-700">Hospitality solutions. Doing FF&E and OS&E procurement Services</p>
@@ -113,7 +120,7 @@
 </div>
 
         <div class="max-w-sm rounded-lg border border-gray-200 p-5 shadow">
-  <img src="exhibition.png" class="rounded-lg" />
+  <img src="category/exhibition.png" class="rounded-lg" />
   <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Exhibition</h2>
   <div class="flex flex-col items-start">
     <p class="mb-3 text-gray-700">Building Exhibition stands and innovative technical support.</p>
@@ -122,42 +129,78 @@
 </div>
 
         <div class="max-w-sm rounded-lg border border-gray-200 p-5 shadow items-center">
-  <img src="events.png" class="rounded-lg" />
+  <img src="category/events.png" class="rounded-lg" />
   <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Events</h2>
   <div class="flex flex-col items-start">
     <p class="mb-3 text-gray-700">Premium solutions and services for your events, Start-to-end.</p>
     <!-- <button class="rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300">Card button</button> -->
   </div>
 </div>
-
-          <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">Organizing events ..</h3>
-         <p>Organizing Exhibition events</p>
-        <p>Organizing events and concerts</p>
  </div>
- 
-          <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">Arrangements..</h3>
-         <p>Corporate event structures</p>
-        <p>F&B arrangements</p>
- </div>
- 
-          <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">Marketing & Designing..</h3>
-         <p>FF&E and OS&E services</p>
-        <p>Marketing and designing the business on social media</p>
- </div>
-
-
-
       </div>
     </div>
   </section>
 
-  
+  <!-- Services Section-->
+  <section id="services" class="pt-40 px-4 max-w-6xl mx-auto">
+    <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"> Our Services</h1>
+
+    
+<ul class="space-y-4 text-left text-black text-2xl">
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Hospitality Procurement & solutions</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Exhibition Stand & Structures</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Organizing Exhibition Events</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+<svg class="shrink-0 w-3.5 h-3.5           text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Organizing Events and Concerts</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Corporate Event Structures</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+        <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>F&B Arrangements</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg> 
+        <span>FF&E and OS&E Services</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Marketing and Designing the Business on Social Media</span>
+    </li>
+  </ul>
+
+  </section>
 
   <!-- Gallery Placeholder -->
-  <section id="extra-gallery" class="pt-40 px-4 max-w-6xl mx-auto">
+  <section id="gallery" class="pt-40 px-4 max-w-6xl mx-auto">
     <h2 class="text-2xl font-bold text-center mb-8">Gallery</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div class="bg-gray-300 h-40 rounded"></div>
@@ -168,7 +211,7 @@
 
   <!-- Contact Section -->
   <section id="contact" class="pt-40">
-    <div class="flex bg-blue-100">
+    <div class="flex">
        <!-- <img src="logo.png" alt="TEEM Logo" class="h-100 w-auto mx-auto mb-4"> -->
      
     <div class="max-w-xl mx-auto px-4 text-center">      
