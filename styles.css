@@ -23,3 +23,8 @@ body::before {
     background: green;
   }
 }
+
+
+.logo {
+  background-color: rgb(230 224 146 / 19%);
+}
