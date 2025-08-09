@@ -1,87 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Transformation Exhibition & Events Management</title>
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-   <script type="text/javascript" src="scripts/3.4.16"></script>
-  <style rel="stylesheet" href="styles.css"></style>  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Transformation Exhibition & Events Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body class="bg-white text-black-800 font-sans bg-[url('bg/bg-yellow.png')] bg-repeat">
-  <!-- Hero Section -->
-  <header class="sticky bg-[url('bg/bg-yellow.png')] bg-repeat top-0 z-50 text-black pb-16 text-center">
+<body class="text-black-800 font-sans bg-[url('bg/bg-yellow.png')] bg-repeat">
+  <header class="sticky bg-[url('bg/bg-yellow.png')] bg-repeat top-0 z-50 text-black pb-20 text-center">
 
       <header class="absolute inset-x-0 top-0 z-50">
-        
+  <!-- NAVBAR -->
+<nav class="shadow fixed w-full z-20 ">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="#Home" class="text-xl font-bold text-indigo-600">TEEM</a>
 
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="logo.png" class="h-8" alt="Flowbite Logo" />
-        <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
-    </a>
-    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a class="text-gray-700 hover:text-indigo-600" href="#Home">Home</a>
+        <a class="text-gray-700 hover:text-indigo-600" href="#About">About</a>
+        <a class="text-gray-700 hover:text-indigo-600" href="#Categories">Categories</a>
+        <a class="text-gray-700 hover:text-indigo-600" href="#Services">Services</a>
+        <a class="text-gray-700 hover:text-indigo-600" href="#Gallery">Gallery</a>
+        <a class="text-gray-700 hover:text-indigo-600" href="#Contact">Contact</a>
+      </div>
+
+      <!-- Hamburger Menu -->
+      <a href="#menu" class="md:hidden p-2">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-        </li>
-      </ul>
+      </a>
     </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="menu" class="md:hidden fixed inset-0 bg-white/90  p-6 translate-x-full 
+  transition-transform duration-300 ease-in-out target:translate-x-0">
+    <div class="flex justify-between items-center mb-6">
+      <span class="text-xl font-bold text-indigo-600">Menu</span>
+      <a href="#Home" class="p-2">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </a>
+    </div>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#Home">Home</a>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#About">About</a>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#Categories">Categories</a>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#Services">Services</a>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#Gallery">Gallery</a>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#Contact">Contact</a>
   </div>
 </nav>
 
-    <!-- <nav aria-label="Global" class="flex items-center justify-between">
-      <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
-          <img src="logo.png" alt="" class="h-20 w-auto" />
-        </a>
-      </div>
-      <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white-700">
-          <span class="sr-only">Transformation Exhibition & Events Management</span>
-          
-        </button>
-      </div>
-      <div class="flex gap-x-12">
-        <a href="#home" class="text-sm/6 font-semibold text-white-900">Home</a>
-        <a href="#about" class="text-sm/6 font-semibold text-white-900">About Us</a>
-        <a href="#category" class="text-sm/6 font-semibold text-white-900">Category</a>
-        <a href="#services" class="text-sm/6 font-semibold text-white-900">Services</a>
-        <a href="#gallery" class="text-sm/6 font-semibold text-white-900">Gallery</a>
-        <a href="#contact" class="text-sm/6 font-semibold text-white-900">Contact Us    ...</a>
-      </div>
-    </nav> -->
   </header>
-    
+  </header>
 
-     </header>
-
-  <!-- Home Section -->
-  <section id="home" class="pt-10 px-4 max-w-4xl mx-auto text-center ">
-<div class="flex flex-col items-center justify-center space-y-8">
+  <!-- Page content so navbar doesn't cover it -->
+      <!-- Home Section -->
+  <section id="Home" class="pt-12 px-4 max-w-4xl mx-auto text-center ">
+<div class="flex flex-col items-center justify-center space-y-4">
   <div>
-            <img src="logo.png" class="h-20 bg-white rounded-full" alt="Flowbite Logo" />
+            <img src="logo.png" class="h-25 rounded-full logo" alt="TEEM Logo" />
 
   </div>
   <div>
@@ -91,7 +76,7 @@
   We Transform your Move into the great Movements.</p>
 <p class="mb-6 text-lg font-normal  lg:text-xl sm:px-16 xl:px-48 ">
   Be part of our TEEM.</p>
-<a href="#contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+<a href="#Contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
     Meet us in one click
     <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -113,7 +98,9 @@
   </section>
 
   <!-- About Section -->
- <section id="about" class="py-40">
+ <section id="About" class="py-40">
+      <h2 class="text-2xl font-bold text-center mb-10">About</h2>
+
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
       <div>
         <img src="about.jpg" alt="Team at work" class="rounded-2xl shadow-md">
@@ -124,7 +111,7 @@
           We are new in the market but have worked on many projects. We are tuned up with Hospitality Services and Solutions, Exhibition Spaces, Creative Brand Stories, meaningful, Impressive Engagements, and Events Organizing and Managing all types of events with highly experienced professionals in all areas. Our Team observes closely for the customer requirements and expertise in a better and easier way. Connect your destination to TEEM.
 
         </p>
-      <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+      <a href="#Contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
     Meet us in one click
     <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -143,7 +130,7 @@
   </section>
 
   <!-- Video Section -->
-  <section id="video" class="pt-40 px-4 max-w-4xl mx-auto text-center">
+  <section id="Video" class="pt-40 px-4 max-w-4xl mx-auto text-center">
     <div class="px-4 sm:px-6 lg:px-8 ">
         <div class="relative overflow-hidden rounded-lg">
       <video class="w-full h-auto rounded-lg" autoplay muted playsinline controls>
@@ -167,46 +154,67 @@
   </section>
 
   <!-- Category Section -->
-  <section id="category" class="pt-40">
+  <section id="Categories" class="pt-40">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-2xl font-bold text-center mb-10">Category</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-        <div class="max-w-sm rounded-lg border border-gray-200 p-5 shadow">
-      <img src="category/hospitality.png" class="rounded-lg" />
-      <h2 class="mb-2 text-2xl font-bold tracking-tight text-white-900">Hospitality</h2>
-      <div class="flex flex-col items-start">
-        <p class="mb-3 text-white-700">Hospitality solutions. Doing FF&E and OS&E procurement Services</p>
-        <!-- <button class="rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300">Card button</button> -->
+
+  <!-- Card Container -->
+  <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    
+    <!-- Image Header -->
+    <img class="" src="category/hospitality.png" alt="Card Image">
+
+    <!-- Card Body -->
+    <div class="p-6">
+      <h2 class="text-xl font-bold text-gray-800 mb-2">Hospitality</h2>
+      <p class="text-gray-600 text-sm">
+        Hospitality solutions. Doing FF&E and OS&E procurement Services.
+      </p>
+    </div>
+  </div>
+
+    <!-- Card Container -->
+  <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    
+    <!-- Image Header -->
+    <img class="" src="category/exhibition.png" alt="Card Image">
+
+    <!-- Card Body -->
+    <div class="p-6">
+      <h2 class="text-xl font-bold text-gray-800 mb-2">Exhibition</h2>
+      <p class="text-gray-600 text-sm">
+        Building Exhibition stands and innovative technical support.
+      </p>
+    </div>
+  </div>
+
+    <!-- Card Container -->
+  <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    
+    <!-- Image Header -->
+    <img class="" src="category/events.png" alt="Card Image">
+
+    <!-- Card Body -->
+    <div class="p-6">
+      <h2 class="text-xl font-bold text-gray-800 mb-2">Events</h2>
+      <p class="text-gray-600 text-sm">
+        Premium solutions and services for your events, Start-to-end.
+      </p>
+    </div>
+  </div>
       </div>
-</div>
+      
 
-        <div class="max-w-sm rounded-lg border border-gray-200 p-5 shadow">
-  <img src="category/exhibition.png" class="rounded-lg" />
-  <h2 class="mb-2 text-2xl font-bold tracking-tight text-white-900">Exhibition</h2>
-  <div class="flex flex-col items-start">
-    <p class="mb-3 text-white-700">Building Exhibition stands and innovative technical support.</p>
-    <!-- <button class="rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300">Card button</button> -->
-  </div>
-</div>
-
-        <div class="max-w-sm rounded-lg border border-gray-200 p-5 shadow items-center">
-  <img src="category/events.png" class="rounded-lg" />
-  <h2 class="mb-2 text-2xl font-bold tracking-tight text-white-900">Events</h2>
-  <div class="flex flex-col items-start">
-    <p class="mb-3 text-white-700">Premium solutions and services for your events, Start-to-end.</p>
-    <!-- <button class="rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300">Card button</button> -->
-  </div>
-</div>
- </div>
       </div>
     </div>
   </section>
 
   <!-- Services Section-->
-  <section id="services" class="pt-40 px-4 max-w-6xl mx-auto">
+  <section id="Services" class="pt-40 px-4 max-w-6xl mx-auto">
     <h1 class="mb-2 text-2xl font-bold tracking-tight"> Our Services</h1>
    
-  <ul class="space-y-4 text-left text-2xl">
+  <ul class="space-y-4 text-left text-1xl">
     <li class="flex items-center space-x-3 rtl:space-x-reverse">
          <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
@@ -260,7 +268,7 @@
   </section>
 
   <!-- Gallery Placeholder -->
-  <section id="gallery" class="pt-40 px-4 max-w-6xl mx-auto">
+  <section id="Gallery" class="pt-40 px-4 max-w-6xl mx-auto">
     <h2 class="text-2xl font-bold text-center mb-8">Gallery</h2>
     
 
@@ -290,7 +298,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="pt-40">
+  <section id="Contact" class="pt-40">
     <div class="flex">
        <!-- <img src="logo.png" alt="TEEM Logo" class="h-100 w-auto mx-auto mb-4"> -->
      
@@ -317,4 +325,7 @@
   </footer>
 </body>
 
+
+
+</body>
 </html>
