@@ -1,70 +1,321 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Transformation Exhibition & Events Management</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Transformation Exhibition & Events Management</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="text-black-800 font-sans bg-[url('bg/bg-yellow.png')] bg-repeat">
+  <header class="sticky bg-[url('bg/bg-yellow.png')] bg-repeat top-0 z-50 text-black pb-20 text-center">
 
-<body class="bg-white text-gray-800 font-sans">
-  <!-- Hero Section -->
-  <header class="bg-gradient-to-r from-blue-900 to-yellow-500 text-white py-16 text-center">
-    <h1 class="text-4xl font-bold">Transformation Exhibition & Events Management</h1>
-    <p class="mt-4 text-lg max-w-2xl mx-auto">We are tuned up with Hospitality Services and Solutions, Exhibition Spaces, Creative Brand Stories, Impressive Engagements, and Events — Organized by highly experienced professionals.</p>
-    <a href="#contact" class="mt-6 inline-block bg-yellow-400 text-blue-900 px-6 py-2 rounded font-semibold hover:bg-yellow-300">Get in Touch</a>
+      <header class="absolute inset-x-0 top-0 z-50">
+  <!-- NAVBAR -->
+<nav class="shadow fixed w-full z-20 ">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="#Home" class="text-xl font-bold text-indigo-600">TEEM</a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a class="text-gray-700 hover:text-indigo-600" href="#Home">Home</a>
+        <a class="text-gray-700 hover:text-indigo-600" href="#About">About</a>
+        <a class="text-gray-700 hover:text-indigo-600" href="#Categories">Categories</a>
+        <a class="text-gray-700 hover:text-indigo-600" href="#Services">Services</a>
+        <a class="text-gray-700 hover:text-indigo-600" href="#Gallery">Gallery</a>
+        <a class="text-gray-700 hover:text-indigo-600" href="#Contact">Contact</a>
+      </div>
+
+      <!-- Hamburger Menu -->
+      <a href="#menu" class="md:hidden p-2">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="menu" class="md:hidden fixed inset-0 bg-white/90  p-6 translate-x-full 
+  transition-transform duration-300 ease-in-out target:translate-x-0">
+    <div class="flex justify-between items-center mb-6">
+      <span class="text-xl font-bold text-indigo-600">Menu</span>
+      <a href="#Home" class="p-2">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </a>
+    </div>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#Home">Home</a>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#About">About</a>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#Categories">Categories</a>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#Services">Services</a>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#Gallery">Gallery</a>
+    <a class="block py-3 text-gray-700 hover:text-indigo-600 bg-white" href="#Contact">Contact</a>
+  </div>
+</nav>
+
+  </header>
   </header>
 
-  <!-- About Section -->
-  <section class="py-12 px-4 max-w-4xl mx-auto text-center">
-    <h2 class="text-2xl font-bold mb-4">About Us</h2>
-    <p class="text-lg">We deliver memorable event experiences with our seasoned team specializing in exhibitions, hospitality, and creative brand execution.</p>
+  <!-- Page content so navbar doesn't cover it -->
+      <!-- Home Section -->
+  <section id="Home" class="pt-12 px-4 max-w-4xl mx-auto text-center ">
+<div class="flex flex-col items-center justify-center space-y-4">
+  <div>
+            <img src="logo.png" class="h-25 rounded-full logo" alt="TEEM Logo" />
+
+  </div>
+  <div>
+    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl">
+ Transformation Exhibition & Events Management</h1>
+<p class="mb-6 text-lg font-normal  lg:text-xl sm:px-16 xl:px-48 text-blue-900 font-semibold">
+  We Transform your Move into the great Movements.</p>
+<p class="mb-6 text-lg font-normal  lg:text-xl sm:px-16 xl:px-48 ">
+  Be part of our TEEM.</p>
+<a href="#contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+    Meet us in one click
+    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+  </svg>
+</a>
+  </div>
+</div>
+
+
+    <!-- <h1 class="text-4xl font-bold">Transformation Exhibition & Events Management</h1>
+    <p class="mt-4 text-lg max-w-2xl mx-auto text-blue-400">We Transform your Move into the great Movements. </p>
+    <p class="mt-4 text-lg max-w-2xl mx-auto mb-20 ">Be part of our TEEM </p>
+
+    <a href="#contact" class="mt-6 inline-block bg-blue-400 text-white-900 px-6 py-2 
+    rounded font-semibold hover:bg-blue-400 ">MEET US IN ONE CLICK</a>
+     <p class="mt-5 text-lg max-w-2xl mx-auto">We have experience working in the background, but TODAY we are LIVE!!! -->
+</p>
+
   </section>
 
-  <!-- Services Section -->
-  <section class="bg-gray-100 py-12">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl font-bold text-center mb-10">Our Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">Hospitality</h3>
-          <p>Professional hospitality support for events and exhibitions ensuring seamless guest experience.</p>
-        </div>
-        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">Exhibition</h3>
-          <p>Creative stall design, fabrication, and on-ground exhibition management with precision.</p>
-        </div>
-        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-2">Events</h3>
-          <p>From brand launches to weddings, we organize impactful events tailored to your vision.</p>
-        </div>
+  <!-- About Section -->
+ <section id="About" class="py-40">
+      <h2 class="text-2xl font-bold text-center mb-10">About</h2>
+
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div>
+        <img src="about.jpg" alt="Team at work" class="rounded-2xl shadow-md">
+      </div>
+      <div class="flex flex-col justify-center">
+        <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Who we are?</h3>
+        <p class="mb-4 text-white-700 leading-relaxed">
+          We are new in the market but have worked on many projects. We are tuned up with Hospitality Services and Solutions, Exhibition Spaces, Creative Brand Stories, meaningful, Impressive Engagements, and Events Organizing and Managing all types of events with highly experienced professionals in all areas. Our Team observes closely for the customer requirements and expertise in a better and easier way. Connect your destination to TEEM.
+
+        </p>
+      <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+    Meet us in one click
+    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+  </svg>
+</a>
+
+        <!-- <h3 class="text-2xl font-semibold text-indigo-600 mt-8 mb-4">What Sets Us Apart</h3>
+        <ul class="list-disc list-inside text-white-700 space-y-2">
+          <li>Creative & Professional Event Solutions</li>
+          <li>Strong Team with Hospitality Expertise</li>
+          <li>Custom Branding & Exhibition Spaces</li>
+          <li>Customer-first, detail-oriented approach</li>
+        </ul> -->
       </div>
     </div>
   </section>
 
-  <!-- Gallery Placeholder -->
-  <section class="py-12 px-4 max-w-6xl mx-auto">
-    <h2 class="text-2xl font-bold text-center mb-8">Gallery</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="bg-gray-300 h-40 rounded"></div>
-      <div class="bg-gray-300 h-40 rounded"></div>
-      <div class="bg-gray-300 h-40 rounded"></div>
+  <!-- Video Section -->
+  <section id="Video" class="pt-40 px-4 max-w-4xl mx-auto text-center">
+    <div class="px-4 sm:px-6 lg:px-8 ">
+        <div class="relative overflow-hidden rounded-lg">
+      <video class="w-full h-auto rounded-lg" autoplay muted playsinline controls>
+        <source src="video.mp4" type="video/mp4" >
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  <!-- <div class="h-120 md:h-[80dvh] flex flex-col bg-[url('video.mp4')] bg-cover bg-center bg-no-repeat rounded-2xl">
+    <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
+      <h1 class="text-xl md:text-3xl lg:text-5xl text-white">
+        Making it a success is the goal!
+      </h1>
+
+          <p class="text-lg">We are new in the market but have worked on many projects. We are tuned up with Hospitality Services and Solutions, Exhibition Spaces, Creative Brand Stories, meaningful, Impressive Engagements, and Events Organizing and Managing all types of events with highly experienced professionals in all areas. Our Team observes closely for the customer requirements and expertise in a better and easier way. Connect your destination to TEEM.
+
+    </div>
+  </div> -->
+</div>
+
+ </p>
+  </section>
+
+  <!-- Category Section -->
+  <section id="Categories" class="pt-40">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-10">Category</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+
+  <!-- Card Container -->
+  <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    
+    <!-- Image Header -->
+    <img class="" src="category/hospitality.png" alt="Card Image">
+
+    <!-- Card Body -->
+    <div class="p-6">
+      <h2 class="text-xl font-bold text-gray-800 mb-2">Hospitality</h2>
+      <p class="text-gray-600 text-sm">
+        Hospitality solutions. Doing FF&E and OS&E procurement Services.
+      </p>
+    </div>
+  </div>
+
+    <!-- Card Container -->
+  <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    
+    <!-- Image Header -->
+    <img class="" src="category/exhibition.png" alt="Card Image">
+
+    <!-- Card Body -->
+    <div class="p-6">
+      <h2 class="text-xl font-bold text-gray-800 mb-2">Exhibition</h2>
+      <p class="text-gray-600 text-sm">
+        Building Exhibition stands and innovative technical support.
+      </p>
+    </div>
+  </div>
+
+    <!-- Card Container -->
+  <div class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    
+    <!-- Image Header -->
+    <img class="" src="category/events.png" alt="Card Image">
+
+    <!-- Card Body -->
+    <div class="p-6">
+      <h2 class="text-xl font-bold text-gray-800 mb-2">Events</h2>
+      <p class="text-gray-600 text-sm">
+        Premium solutions and services for your events, Start-to-end.
+      </p>
+    </div>
+  </div>
+      </div>
+      
+
+      </div>
     </div>
   </section>
 
+  <!-- Services Section-->
+  <section id="Services" class="pt-40 px-4 max-w-6xl mx-auto">
+    <h1 class="mb-2 text-2xl font-bold tracking-tight"> Our Services</h1>
+   
+  <ul class="space-y-4 text-left text-1xl">
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Hospitality Procurement & solutions</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Exhibition Stand & Structures</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Organizing Exhibition Events</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+<svg class="shrink-0 w-3.5 h-3.5           text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Organizing Events and Concerts</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Corporate Event Structures</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+        <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>F&B Arrangements</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg> 
+        <span>FF&E and OS&E Services</span>
+    </li>
+    <li class="flex items-center space-x-3 rtl:space-x-reverse">
+         <svg class="shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
+        <span>Marketing and Designing the Business on Social Media</span>
+    </li>
+  </ul>
+
+  </section>
+
+  <!-- Gallery Placeholder -->
+  <section id="Gallery" class="pt-40 px-4 max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold text-center mb-8">Gallery</h2>
+    
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+   
+    
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="gallery/image1.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="gallery/image2.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="gallery/image3.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="gallery/image4.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="gallery/image5.jpg" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-full rounded-lg" src="gallery/image6.jpg" alt="">
+    </div>
+</div>
+
+  </section>
+
   <!-- Contact Section -->
-  <section id="contact" class="bg-blue-900 text-white py-12">
-    <div class="max-w-xl mx-auto px-4 text-center">
+  <section id="Contact" class="pt-40">
+    <div class="flex">
+       <!-- <img src="logo.png" alt="TEEM Logo" class="h-100 w-auto mx-auto mb-4"> -->
+     
+    <div class="max-w-xl mx-auto px-4 text-center">      
+        
       <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-      <p class="mb-4">Ready to transform your event? Reach out to us today.</p>
-      <p class="mb-2">📞 <strong>96968271200</strong></p>
+       <p class="mb-2">📞 <strong>96968271200</strong></p>
+       
+     <p class="mb-4">Ready to transform your event? Reach out to us today.</p>
       <form action="https://formspree.io/f/mrbkvarw" method="POST" class="space-y-4 mt-6">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 rounded text-black" />
-        <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 rounded text-black" />
-        <textarea name="message" rows="4" placeholder="Your Message" required class="w-full p-2 rounded text-black"></textarea>
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 rounded" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 rounded" />
+        <textarea name="message" rows="4" placeholder="Your Message" required class="w-full p-2 rounded"></textarea>
         <button type="submit" class="bg-yellow-400 text-blue-900 px-6 py-2 rounded font-semibold hover:bg-yellow-300">Send Message</button>
       </form>
+    </div>
+
     </div>
   </section>
 
@@ -74,4 +325,7 @@
   </footer>
 </body>
 
+
+
+</body>
 </html>
