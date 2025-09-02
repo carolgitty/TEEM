@@ -298,27 +298,53 @@
 
   </section>
 
-  <!-- Contact Section -->
-  <section id="Contact" class="pt-40">
-    <div class="flex">
-       <!-- <img src="logo.png" alt="TEEM Logo" class="h-100 w-auto mx-auto mb-4"> -->
-     
-    <div class="max-w-xl mx-auto px-4 text-center">      
-        
-      <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-       <p class="mb-2">📞 <strong>96968271200</strong></p>
-       
-     <p class="mb-4">Ready to transform your event? Reach out to us today.</p>
-      <form action="https://formspree.io/f/mrbkvarw" method="POST" class="space-y-4 mt-6">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 rounded" />
-        <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 rounded" />
-        <textarea name="message" rows="4" placeholder="Your Message" required class="w-full p-2 rounded"></textarea>
-        <button type="submit" class="bg-yellow-400 text-blue-900 px-6 py-2 rounded font-semibold hover:bg-yellow-300">Send Message</button>
-      </form>
+<!-- Contact Section -->
+<section id="Contact" class="py-20">
+  <div class="max-w-6xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 dark:text-zinc-100">Contact Us</h2>
+      <p class="mt-2 text-gray-600 dark:text-zinc-400">
+        Ready to transform your event? Reach out to us today.
+      </p>
+      <p class="mt-1 text-lg font-semibold text-blue-900 dark:text-yellow-400">📞 96968271200</p>
     </div>
 
+    <div class="grid lg:grid-cols-2 gap-10">
+      <!-- Contact Form -->
+      <form action="https://formspree.io/f/mrbkvarw" method="POST" class="space-y-4 bg-white dark:bg-zinc-900 p-6 rounded-2xl shadow border border-gray-200 dark:border-zinc-700">
+        <input type="text" name="name" placeholder="Your Name" required
+          class="w-full p-3 rounded-lg border border-gray-300 dark:border-zinc-700 bg-gray-50 dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+        <input type="email" name="email" placeholder="Your Email" required
+          class="w-full p-3 rounded-lg border border-gray-300 dark:border-zinc-700 bg-gray-50 dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+        <textarea name="message" rows="4" placeholder="Your Message" required
+          class="w-full p-3 rounded-lg border border-gray-300 dark:border-zinc-700 bg-gray-50 dark:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+        <button type="submit"
+          class="w-full bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
+          Send Message
+        </button>
+      </form>
+
+      <!-- Address Block -->
+      <address class="not-italic bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-700 p-6 shadow text-sm leading-relaxed space-y-1">
+        <div class="font-semibold text-gray-800 dark:text-zinc-100 text-lg">
+          Ajman Ventures Centre Free Zone
+        </div>
+        <div class="text-gray-700 dark:text-zinc-300">
+          Amber Gem Tower, Mezzanine Floor
+        </div>
+        <div class="text-gray-700 dark:text-zinc-300">
+          Sheikh Khalifa Street
+        </div>
+        <div class="text-gray-700 dark:text-zinc-300">
+          Ajman, United Arab Emirates
+        </div>
+        <div class="mt-2 text-gray-900 dark:text-zinc-100 font-medium">
+          P.O. Box: 4848
+        </div>
+      </address>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white text-center py-4">
