@@ -271,21 +271,69 @@
   <!-- Gallery Placeholder -->
   <section id="Gallery" class="pt-40 px-4 max-w-6xl mx-auto">
     <h2 class="text-2xl font-bold text-center mb-8">Gallery</h2>
-    
+      <section class="relative w-full max-w-4xl mx-auto">
+  <!-- Hidden Radios -->
+  <input type="radio" name="carousel" id="slide1" class="hidden" checked>
+  <input type="radio" name="carousel" id="slide2" class="hidden">
+  <input type="radio" name="carousel" id="slide3" class="hidden">
+  <input type="radio" name="carousel" id="slide4" class="hidden">
+  <input type="radio" name="carousel" id="slide5" class="hidden">
+  <input type="radio" name="carousel" id="slide6" class="hidden">
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-   
-    
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="gallery/image1.jpg" alt="">
+  <!-- Slides Wrapper -->
+  <div class="overflow-hidden relative rounded-2xl">
+    <div class="flex w-[600%] transition-transform duration-700" id="slides">
+      <div class="w-1/6 flex-shrink-0">
+        <img src="gallery/img1.jpg" class="w-full h-64 object-cover" alt="Slide 1">
+      </div>
+      <div class="w-1/6 flex-shrink-0">
+        <img src="gallery/img5.jpg" class="w-full h-64 object-cover" alt="Slide 2">
+      </div>
+      <div class="w-1/6 flex-shrink-0">
+        <img src="gallery/img6.jpg" class="w-full h-64 object-cover" alt="Slide 3">
+      </div>
+      <div class="w-1/6 flex-shrink-0">
+        <img src="gallery/img2.jpg" class="w-full h-64 object-cover" alt="Slide 4">
+      </div>
+      <div class="w-1/6 flex-shrink-0">
+        <img src="gallery/img3.jpg" class="w-full h-64 object-cover" alt="Slide 5">
+      </div>
+      <div class="w-1/6 flex-shrink-0">
+        <img src="gallery/img4.jpg" class="w-full h-64 object-cover" alt="Slide 6">
+      </div>
     </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="gallery/image5.jpg" alt="">
-    </div>
-    <div>
-        <img class="h-auto max-w-full rounded-lg" src="gallery/image6.jpg" alt="">
-    </div>
-</div>
+  </div>
+
+  <!-- Indicators -->
+  <div class="flex justify-center gap-2 mt-4">
+    <label for="slide1" class="cursor-pointer w-3 h-3 rounded-full bg-gray-300 border border-gray-400"></label>
+    <label for="slide2" class="cursor-pointer w-3 h-3 rounded-full bg-gray-300 border border-gray-400"></label>
+    <label for="slide3" class="cursor-pointer w-3 h-3 rounded-full bg-gray-300 border border-gray-400"></label>
+    <label for="slide4" class="cursor-pointer w-3 h-3 rounded-full bg-gray-300 border border-gray-400"></label>
+    <label for="slide5" class="cursor-pointer w-3 h-3 rounded-full bg-gray-300 border border-gray-400"></label>
+    <label for="slide6" class="cursor-pointer w-3 h-3 rounded-full bg-gray-300 border border-gray-400"></label>
+  </div>
+
+  <!-- Custom CSS -->
+  <style>
+    #slide1:checked ~ .overflow-hidden #slides { transform: translateX(0%); }
+    #slide2:checked ~ .overflow-hidden #slides { transform: translateX(-16.666%); }
+    #slide3:checked ~ .overflow-hidden #slides { transform: translateX(-33.333%); }
+    #slide4:checked ~ .overflow-hidden #slides { transform: translateX(-50%); }
+    #slide5:checked ~ .overflow-hidden #slides { transform: translateX(-66.666%); }
+    #slide6:checked ~ .overflow-hidden #slides { transform: translateX(-83.333%); }
+
+    /* Highlight active indicator */
+    #slide1:checked ~ .flex label[for="slide1"],
+    #slide2:checked ~ .flex label[for="slide2"],
+    #slide3:checked ~ .flex label[for="slide3"],
+    #slide4:checked ~ .flex label[for="slide4"],
+    #slide5:checked ~ .flex label[for="slide5"],
+    #slide6:checked ~ .flex label[for="slide6"] {
+      background-color: #111827; /* Tailwind gray-900 */
+    }
+  </style>
+</section>
 
   </section>
 
